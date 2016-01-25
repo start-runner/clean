@@ -12,8 +12,6 @@ npm i -S start-clean
 
 ## Usage
 
-`clean` function argument is ["del" package patterns](https://github.com/sindresorhus/del#patterns).
-
 ```js
 // tasks/index.js
 import clean from 'start-clean';
@@ -32,3 +30,9 @@ export const build = [
   "build": "npm run task build"
 }
 ```
+
+## Arguments
+
+`clean(patterns)`
+
+* `patterns` – minimatch patterns, see ["del" package](https://github.com/sindresorhus/del#patterns)
