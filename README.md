@@ -35,4 +35,4 @@ export const build = [
 
 `clean(patterns)`
 
-* `patterns` – minimatch patterns, see ["del" package](https://github.com/sindresorhus/del#patterns)
+* `patterns` – [minimatch patterns](https://github.com/isaacs/minimatch)
