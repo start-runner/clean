@@ -35,4 +35,4 @@ export const build = [
 
 `clean(patterns)`
 
-* `patterns` – [minimatch patterns](https://github.com/isaacs/minimatch)
+* `patterns` – [globby patterns](https://github.com/sindresorhus/globby)
