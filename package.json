@@ -1,6 +1,6 @@
 {
   "name": "start-clean",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clean task for Start",
   "keywords": [ "start-task", "clean" ],
   "homepage": "https://github.com/start-runner/clean",
