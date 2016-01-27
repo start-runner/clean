@@ -2,7 +2,7 @@
   "name": "start-clean",
   "version": "0.1.0",
   "description": "Clean task for Start",
-  "keywords": [ "tasks", "runner", "start", "clean" ],
+  "keywords": [ "start-task", "clean" ],
   "homepage": "https://github.com/start-runner/clean",
   "repository": "start-runner/clean",
   "contributors": [
