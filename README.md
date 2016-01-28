@@ -14,13 +14,17 @@ npm i -S start-clean
 
 ```js
 // tasks/index.js
+import start from 'start';
+import logger from 'start-simple-logger';
 import clean from 'start-clean';
 
-export const build = [
-    ...
-    clean('build/'),
-    ...
-];
+export function build() {
+    return start(logger)(
+        ...
+        clean('build/'),
+        ...
+    );
+}
 ```
 
 ```js
