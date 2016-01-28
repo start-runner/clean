@@ -11,6 +11,9 @@
   ],
   "files": [ "build/" ],
   "main": "build/index.js",
+  "peerDependencies": {
+    "start": "2.x.x"
+  },
   "dependencies": {
     "del": "2.x.x"
   },
