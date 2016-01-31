@@ -16,13 +16,13 @@ npm i -S start-clean
 // tasks/index.js
 import start from 'start';
 import logger from 'start-simple-logger';
+import files from 'start-files';
 import clean from 'start-clean';
 
-export function build() {
+export function cleanBuild() {
     return start(logger)(
-        ...
-        clean('build/'),
-        ...
+        files('build/'),
+        clean()
     );
 }
 ```
@@ -31,12 +31,6 @@ export function build() {
 // package.json
 "scripts": {
   "task": "babel-node node_modules/.bin/start tasks/",
-  "build": "npm run task build"
+  "clean-build": "npm run task cleanBuild"
 }
 ```
-
-## Arguments
-
-`clean(patterns)`
-
-* `patterns` – [globby patterns](https://github.com/sindresorhus/globby)
