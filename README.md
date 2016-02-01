@@ -12,6 +12,8 @@ npm i -S start-clean
 
 ## Usage
 
+Task is rely on array of files.
+
 ```js
 // tasks/index.js
 import start from 'start';
@@ -20,7 +22,7 @@ import files from 'start-files';
 import clean from 'start-clean';
 
 export function cleanBuild() {
-    return start(logger)(
+    return start(logger())(
         files('build/'),
         clean()
     );
