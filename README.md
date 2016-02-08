@@ -18,12 +18,12 @@ npm i -S start-clean
 
 ```js
 import start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 
 export function cleanBuild() {
-    return start(logger())(
+    return start(reporter())(
         files('build/'),
         clean()
     );
