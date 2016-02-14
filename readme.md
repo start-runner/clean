@@ -30,4 +30,4 @@ export function cleanBuild() {
 }
 ```
 
-Task is rely on array of files, see [documentation](https://github.com/start-runner/start#readme) for details.
+This task relies on array of files, see [documentation](https://github.com/start-runner/start#readme) for details.
