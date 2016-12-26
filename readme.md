@@ -10,8 +10,10 @@ Clean task for [Start](https://github.com/start-runner/start).
 
 ## Install
 
-```
-npm i -S start-clean
+```sh
+npm install --save-dev start-clean
+# or
+yarn add --dev start-clean
 ```
 
 ## Usage
@@ -22,12 +24,10 @@ import reporter from 'start-pretty-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 
-export function cleanBuild() {
-    return start(reporter())(
-        files('build/'),
-        clean()
-    );
-}
+export const cleanBuild = () => start(reporter())(
+  files('build/'),
+  clean()
+);
 ```
 
 This task relies on array of files and provides the same, see [documentation](https://github.com/start-runner/start#readme) for details.
