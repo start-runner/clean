@@ -15,7 +15,7 @@
   ],
   "main": "build/index.js",
   "dependencies": {
-    "pify": "^2.3.0",
+    "makethen": "^0.1.0",
     "rimraf": "^2.5.4"
   },
   "devDependencies": {
